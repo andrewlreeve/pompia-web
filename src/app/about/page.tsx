@@ -58,72 +58,17 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
+    title: 'People',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
+        name: 'Annabel Causer',
+        linkedin: 'https://www.linkedin.com/in/annabelcauser/',
         image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        name: 'Andrew Reeve',
+        linkedin: 'https://www.linkedin.com/in/andrewlreeve/',
         image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
-      },
-    ],
-  },
-  {
-    title: 'Team',
-    people: [
-      {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
-      },
-      {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
-      },
-      {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
       },
     ],
   },
@@ -161,7 +106,7 @@ function Team() {
                               {person.name}
                             </p>
                             <p className="mt-2 text-sm text-white">
-                              {person.role}
+                              <a href={person.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
                             </p>
                           </div>
                         </div>
@@ -181,7 +126,7 @@ function Team() {
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Pep Zest is a boutique online and e-commerce growth consultancy founded by Annabel Causer and Andrew Reeve',
 }
 
 export default async function About() {
@@ -189,44 +134,26 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="TODO: Do we want a title here">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Pep Zest is a boutique online and e-commerce growth consultancy founded by Annabel Causer and Andrew Reeve, each with over 15 years experience across growth, marketing, technology, ecommerce and data.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            “Pep and Zest is built to provide the support we wanted when we were running our own direct-to-consumer business. Our approach is to be an extension of your team, to understand your business levers and the actions required to drive sustainable long-term growth. We’ll help to dial up your growth, embed the skills you need to maintain momentum, and then get out your way”.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Annabel and Andrew mentor and advise startups across NZ, AU and UK and are driven to help companies to discover what will move their online businesses forward.
+          </p>
+          <p>
+            Prior to founding Pep and Zest, Annabel and Andrew founded a VC-backed online craft beer retailer in the UK. Highlights include driving 3 x yearly customer and revenue growth; VC, crowd and angel investment; 31% awareness among craft beer drinkers; and multiple start up awards including #49 StartUp100 Awards, Future 50 Disruptive Businesses, Retail Business of the Year Finalist and The Guardian Startup of the Year Finalist.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container>
 
       <Culture />
 
       <Team />
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
-      />
 
       <ContactSection />
     </>

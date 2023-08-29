@@ -69,14 +69,9 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="What They’re Saying"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -84,27 +79,22 @@ function CaseStudies({
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
-                  <Link href={caseStudy.href}>
-                    <span className="absolute inset-0 rounded-3xl" />
-                    <Image
-                      src={caseStudy.logo}
-                      alt={caseStudy.client}
-                      className="h-16 w-16"
-                      unoptimized
-                    />
-                  </Link>
+                  <span className="absolute inset-0 rounded-3xl" />
+                  <Image
+                    src={caseStudy.logo}
+                    alt={caseStudy.client}
+                    className="h-16 w-16"
+                    unoptimized
+                  />
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
-                    className="font-semibold"
-                  >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
+                  <span className="font-semibold">
+                    {caseStudy.client}
+                  </span>
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>TODO Role</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -126,13 +116,9 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="We unlock growth in your online business"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
-        </p>
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -146,24 +132,20 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Strategy & Frameworks">
+              Strategy and frameworks to help achieve your growth goals.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Marketing Expertise">
+              Marketing strategy and performance marketing to build your brand and grow your customers.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Website Services">
+              Site audits, relaunches, and conversion optimization to help turn visitors into customers.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Data Insights">
+              Transform your data into valuable insight.
+            </ListItem>
+            <ListItem title="Flexible Collaboration">
+              Interim support or project-specific consultation.
             </ListItem>
           </List>
         </div>
@@ -174,7 +156,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Direct-to-consumer and e-commerce consultancy',
 }
 
 export default async function Home() {
@@ -188,9 +170,8 @@ export default async function Home() {
             Pep and Zest 
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Direct-to-consumer and e-commerce consultancy helping companies to achieve online growth.
+            With an entrepreneurial approach, we provide the support, strategy, and tools you need to disrupt industries and scale your digital business.
           </p>
         </FadeIn>
       </Container>
