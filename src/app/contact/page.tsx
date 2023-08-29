@@ -35,22 +35,6 @@ function TextInput({
   )
 }
 
-function RadioInput({
-  label,
-  ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
-  return (
-    <label className="flex gap-x-3">
-      <input
-        type="radio"
-        {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none checked:border-[0.5rem] checked:border-neutral-950 focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
-      />
-      <span className="text-base/6 text-neutral-950">{label}</span>
-    </label>
-  )
-}
-
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
@@ -111,7 +95,7 @@ function ContactDetails() {
         </h2>
         <p className="mt-6 text-base text-neutral-600">
           Whether you’re a copywriter, designer, content producer or data analyst, we’re often looking to expand our partners and team of freelancers and contractors.
-          If you're passionate about direct-to-consumer businesses and growth then we’d love to hear from you.
+          If you’re passionate about direct-to-consumer businesses and growth then we’d love to hear from you.
         </p>
       </Border>
     </FadeIn>
