@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
-import { StatList, StatListItem } from '@/components/StatList'
 import { TagList, TagListItem } from '@/components/TagList'
 
 export const MDXComponents = {
@@ -29,32 +28,6 @@ export const MDXComponents = {
           sizes="(min-width: 768px) 42rem, 100vw"
           className="aspect-[16/10] w-full object-cover"
         />
-      </div>
-    )
-  },
-  StatList({
-    className,
-    ...props
-  }: React.ComponentPropsWithoutRef<typeof StatList>) {
-    return (
-      <StatList className={clsx('my-32 !max-w-none', className)} {...props} />
-    )
-  },
-  StatListItem,
-  table: function Table({
-    className,
-    ...props
-  }: React.ComponentPropsWithoutRef<'table'>) {
-    return (
-      <div
-        className={clsx(
-          'my-10 max-sm:-mx-6 max-sm:flex max-sm:overflow-x-auto',
-          className,
-        )}
-      >
-        <div className="max-sm:min-w-full max-sm:flex-none max-sm:px-6">
-          <table {...props} />
-        </div>
       </div>
     )
   },
