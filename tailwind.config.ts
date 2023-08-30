@@ -18,15 +18,27 @@ export default {
       '7xl': ['4rem', { lineHeight: '4.5rem' }],
     },
     extend: {
+      colors: {
+        'richBlack': '#020a0a',
+        'plum': '#910f1a',
+        'cayenne': '#dd1507',
+        'raspberry': '#df1440',
+        'citrus': '#f58713',
+        'tumeric': '#f6bb22',
+        'aubergine': '#700022',
+        'limeZest': '#b6cb43',
+        'sugar': '#fff7e8',
+      },
       borderRadius: {
         '4xl': '2.5rem',
       },
       fontFamily: {
-        sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
         display: [
-          ['Mona Sans', ...defaultTheme.fontFamily.sans],
+          ['League Spartan', ...defaultTheme.fontFamily.sans],
           { fontVariationSettings: '"wdth" 125' },
         ],
+        body: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
     },
   },

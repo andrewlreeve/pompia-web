@@ -19,7 +19,6 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -32,15 +31,21 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
+const testimonials = [
+  {client: 'Urban Jungle', name: 'Nick James', role: 'Founder & MD', logo: logoPhobiaDark, title: "I couldn't recomend Annabel highly enough", description: "She joined our team as interim Growth Lead during a period of transition and immediately took the bull by the horns. She was brilliant at identifying strategic priorities, structuring them into logical work-streams and managed the team extremely well - allowing them to execute at a high cadence. She brings a wealth of experience from a breadth of categories, and is also just a pleasure to work alongside!"},
+  {client: 'Hertility Health', name: "Dr Helen O'Neill", role: 'CEO', logo: logoPhobiaDark, title: 'Annabel has been a tour de force', description: 'Not only did she surpass her expectations as she had come recommended, but she has also set a new benchmark. If only everyone could be more Annabel'},
+  {client: 'MOJU', name: 'Jon Marchant', role: 'Marketing Director', logo: logoPhobiaDark, title: 'Annabel is a real pleasure to work with', description: 'She has become an integral part of the MOJU team, putting her wide ranging strategic expertise into practice to drive MOJU DTC growth as well as supporting the internal teams to upskill their e-commerce knowledge. I would strongly recommend Annabel to any business looking to either develop their own DTC platform or accelerate growth.'},
+]
+
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 bg-raspberry py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
             We’ve worked with hundreds of amazing people
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px flex-auto bg-neutral-50" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
@@ -61,11 +66,7 @@ function Clients() {
   )
 }
 
-function CaseStudies({
-  caseStudies,
-}: {
-  caseStudies: Array<MDXEntry<CaseStudy>>
-}) {
+function Testimonials() {
   return (
     <>
       <SectionIntro
@@ -75,32 +76,32 @@ function CaseStudies({
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {caseStudies.map((caseStudy) => (
-            <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
+          {testimonials.map((testimonial) => (
+            <FadeIn key={testimonial.client} className="flex">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 sm:p-8">
                 <h3>
                   <span className="absolute inset-0 rounded-3xl" />
                   <Image
-                    src={caseStudy.logo}
-                    alt={caseStudy.client}
+                    src={testimonial.logo}
+                    alt={testimonial.client}
                     className="h-16 w-16"
                     unoptimized
                   />
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <span className="font-semibold">
-                    {caseStudy.client}
+                    {testimonial.client}
                   </span>
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>TODO Role</span>
+                  <span>{testimonial.name} - {testimonial.role}</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                  {caseStudy.title}
+                  {testimonial.title}
                 </p>
                 <p className="mt-4 text-base text-neutral-600">
-                  {caseStudy.description}
+                  {testimonial.description}
                 </p>
               </article>
             </FadeIn>
@@ -160,13 +161,11 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
-
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-display text-5xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             Pep and Zest 
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
@@ -178,7 +177,7 @@ export default async function Home() {
 
       <Clients />
 
-      <CaseStudies caseStudies={caseStudies} />
+      <Testimonials />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
