@@ -66,7 +66,7 @@ function Header({
             className="h-8 sm:block"
           />
         </Link>
-        <div className="flex items-center gap-x-8">
+        <div className="flex items-center gap-x-4">
           <Button href="/contact" invert={invert}>
             Contact us
           </Button>
