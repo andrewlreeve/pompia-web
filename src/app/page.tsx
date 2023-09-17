@@ -1,6 +1,4 @@
 import { type Metadata } from 'next'
-
-import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 
@@ -23,8 +21,6 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-
-      <ContactSection />
     </>
   )
 }
