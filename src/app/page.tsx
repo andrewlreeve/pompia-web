@@ -43,7 +43,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Who We’ve Worked With 
           </h2>
           <div className="h-px flex-auto bg-neutral-50" />
         </FadeIn>
@@ -117,7 +117,7 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We unlock growth in your online business"
+        title="What We Do"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
       </SectionIntro>
@@ -133,20 +133,17 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Strategy & Frameworks">
-              Strategy and frameworks to help achieve your growth goals.
+            <ListItem title="Strategy">
+              Marketing, Growth & DTC strategies and frameworks.
             </ListItem>
-            <ListItem title="Marketing Expertise">
-              Marketing strategy and performance marketing to build your brand and grow your customers.
+            <ListItem title="Marketing">
+              Digital advertising, performance marketing, and email marketing.
             </ListItem>
-            <ListItem title="Website Services">
-              Site audits, relaunches, and conversion optimization to help turn visitors into customers.
+            <ListItem title="Data">
+              Insight, forecasting, reporting and AI.
             </ListItem>
-            <ListItem title="Data Insights">
-              Transform your data into valuable insight.
-            </ListItem>
-            <ListItem title="Flexible Collaboration">
-              Interim support or project-specific consultation.
+            <ListItem title="Website">
+              Site audits, project management, and conversion optimization.
             </ListItem>
           </List>
         </div>
@@ -166,10 +163,10 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Pep and Zest 
+            Unlock growth in your online business
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Direct-to-consumer and e-commerce consultancy helping companies to achieve online growth.
+            Pep and Zest is a direct-to-consumer and e-commerce consultancy helping companies to achieve online growth.
             With an entrepreneurial approach, we provide the support, strategy, and tools you need to disrupt industries and scale your digital business.
           </p>
         </FadeIn>
@@ -177,18 +174,19 @@ export default async function Home() {
 
       <Clients />
 
-      <Testimonials />
+      <Services />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Pep and Zest is built to provide the support we wanted when we were running our own direct-to-consumer business.
+        Our approach is to be an extension of your team, understand your business levers and the actions required to drive sustainable long-term growth.
       </Testimonial>
 
-      <Services />
+      <Testimonials />
+
+
 
       <ContactSection />
     </>
