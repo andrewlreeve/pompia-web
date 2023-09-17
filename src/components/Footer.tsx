@@ -5,8 +5,6 @@ import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 
 const navigation = [
-  { title: 'About', href: '/about' },
-  { title: 'Process', href: '/process' },
   { title: 'Contact us', href: '/contact' },
 ]
 
