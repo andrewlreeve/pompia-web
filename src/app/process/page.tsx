@@ -235,21 +235,27 @@ function Values() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Process',
+  title: 'Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'We provide Interim, Fractional Support or Consulting Services',
 }
 
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="How we work">
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
+      <PageIntro eyebrow="Process" title="How we work">
+        Two ways to work with us
       </PageIntro>
+      <Container className="mt-8">
+        <GridList>
+          <GridListItem title="Interim or Fractional Role">
+            Fill leadership gaps with experienced roles like Marketing Director or Growth Lead.
+          </GridListItem>
+          <GridListItem title="Consulting Services">
+            Specialised expertise and in-house team coaching for specific projects.
+          </GridListItem>
+        </GridList>
+      </Container>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />
