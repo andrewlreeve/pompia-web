@@ -32,9 +32,9 @@ const clients = [
 ]
 
 const testimonials = [
-  {client: 'Urban Jungle', name: 'Nick James', role: 'Founder & MD', logo: logoPhobiaDark, title: "I couldn't recomend Annabel highly enough", description: "She joined our team as interim Growth Lead during a period of transition and immediately took the bull by the horns. She was brilliant at identifying strategic priorities, structuring them into logical work-streams and managed the team extremely well - allowing them to execute at a high cadence. She brings a wealth of experience from a breadth of categories, and is also just a pleasure to work alongside!"},
-  {client: 'Hertility Health', name: "Dr Helen O'Neill", role: 'CEO', logo: logoPhobiaDark, title: 'Annabel has been a tour de force', description: 'Not only did she surpass her expectations as she had come recommended, but she has also set a new benchmark. If only everyone could be more Annabel'},
-  {client: 'MOJU', name: 'Jon Marchant', role: 'Marketing Director', logo: logoPhobiaDark, title: 'Annabel is a real pleasure to work with', description: 'She has become an integral part of the MOJU team, putting her wide ranging strategic expertise into practice to drive MOJU DTC growth as well as supporting the internal teams to upskill their e-commerce knowledge. I would strongly recommend Annabel to any business looking to either develop their own DTC platform or accelerate growth.'},
+  {client: 'Bedfolk', name: 'Nick James', role: 'Founder & MD', logo: logoPhobiaDark, title: "Wealth of experience", description: "I couldn't recommend Annabel highly enough. She joined our team as interim Growth Lead and immediately took the bull by the horns. She was brilliant at identifying strategic priorities, structuring them into logical work-streams and managed the team extremely well - allowing them to execute at a high cadence. She brings a wealth of experience from a breadth of categories, and is also just a pleasure to work alongside!"},
+  {client: 'MOJU', name: "Jon Marchant", role: 'Marketing Director', logo: logoPhobiaDark, title: 'Strategic expertise', description: 'Annabel is a real pleasure to work with! She has become an integral part of the MOJU team, putting her wide ranging strategic expertise into practice to drive MOJU DTC growth as well as supporting the internal teams to upskill their e-commerce knowledge. I would strongly recommend Annabel to any business looking to either develop their own DTC platform or accelerate growth.'},
+  {client: 'Urban Jungle', name: 'Jimmy Williams', role: 'CEO', logo: logoPhobiaDark, title: 'Incredible with the team', description: "Annabel joined our team at a critical point in our growth… Executing a huge amount of work, with the highest quality standards… From leading a project around branding and visual identity, through overhauls of performance channels and executing big above the line campaigns. She's also been incredible with the team, taking real time to help them develop. If you get the chance to work with her, I strongly advise you take it."},
 ]
 
 function Clients() {
@@ -152,6 +152,43 @@ function Services() {
   )
 }
 
+function Support() {
+  return (
+    <>
+      <SectionIntro
+        eyebrow="Support"
+        title="How We Help"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+      </SectionIntro>
+      <Container className="mt-16">
+        <div className="lg:flex lg:items-center lg:justify-end">
+          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pr-4">
+            <ListItem title="Growth">
+              Unlock opportunities to scale or reactivate growth
+            </ListItem>
+            <ListItem title="Insight">
+              Add a modern data stack with a single source of truth
+            </ListItem>
+            <ListItem title="Expertise">
+              Access fractional marketing and data specalists
+            </ListItem>
+          </List>
+          <div className="flex mt-16 lg:mt-0 justify-center lg:w-1/2 lg:justify-end lg:pl-12">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+              <StylizedImage
+                src={imageLaptop}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end"
+              />
+            </FadeIn>
+          </div>
+        </div>
+      </Container>
+    </>
+  )
+}
+
 export const metadata: Metadata = {
   description:
     'Direct-to-consumer and e-commerce consultancy',
@@ -183,6 +220,8 @@ export default async function Home() {
         Pep and Zest is built to provide the support we wanted when we were running our own direct-to-consumer business.
         Our approach is to be an extension of your team, understand your business levers and the actions required to drive sustainable long-term growth.
       </Testimonial>
+
+      <Support />
 
       <Testimonials />
 
