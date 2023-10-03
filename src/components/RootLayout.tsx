@@ -130,9 +130,6 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
         <NavigationItem href="/services">Services</NavigationItem>
-        <NavigationItem href="/process">Process</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
         <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
     </nav>

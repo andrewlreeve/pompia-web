@@ -2,7 +2,6 @@ import { useId } from 'react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 
-import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -87,15 +86,6 @@ function ContactDetails() {
           </div>
         ))}
       </dl>
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Clients 
-        </h2>
-        <p className="mt-6 text-base text-neutral-600">
-          Whether you’re a copywriter, designer, content producer or data analyst, we’re often looking to expand our partners and team of freelancers and contractors.
-          If you’re passionate about direct-to-consumer businesses and growth then we’d love to hear from you.
-        </p>
-      </Border>
     </FadeIn>
   )
 }

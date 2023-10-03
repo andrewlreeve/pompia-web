@@ -10,7 +10,6 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
   return (
@@ -118,11 +117,9 @@ export const metadata: Metadata = {
 }
 
 export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
-
   return (
     <>
-      <PageIntro eyebrow="About us" title="TODO: Do we want a title here">
+      <PageIntro eyebrow="About" title="Who we are">
         <p>
           Pep Zest is a boutique online and e-commerce growth consultancy founded by Annabel Causer and Andrew Reeve, each with over 15 years experience across growth, marketing, technology, ecommerce and data.
         </p>

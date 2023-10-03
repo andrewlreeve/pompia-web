@@ -6,7 +6,7 @@ import { Logo } from '@/components/Logo'
 
 const navigation = [
   { title: 'About', href: '/about' },
-  { title: 'Process', href: '/process' },
+  { title: 'Services', href: '/services' },
   { title: 'Contact us', href: '/contact' },
 ]
 
