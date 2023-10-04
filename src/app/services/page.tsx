@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 
-import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -9,10 +8,10 @@ import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageWebsite from '@/images/website.jpg'
 
 function Section({
   title,
@@ -75,7 +74,7 @@ function Strategy() {
 
 function Marketing() {
   return (
-    <Section title="Marketing" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Marketing" image={{ src: imageMeeting, shape: 1 }}>
       <List className="mt-8">
         <ListItem>
           Marketing strategy and implementation
@@ -96,7 +95,7 @@ function Marketing() {
 
 function Data() {
   return (
-    <Section title="Data" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Data" image={{ src: imageLaptop, shape: 2 }}>
       <List className="mt-8">
         <ListItem>
           Set up the right foundations to build your data capabilities 
@@ -117,7 +116,7 @@ function Data() {
 
 function Website() {
   return (
-    <Section title="Website" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Website" image={{ src: imageWebsite, shape: 1 }}>
       <List className="mt-8">
         <ListItem>
           Site audits

@@ -17,7 +17,8 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageLaptop from '@/images/laptop.jpg'
+import imageWorking from '@/images/working.jpg'
+import imageBeers from '@/images/beers.jpg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -126,9 +127,9 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src={imageBeers}
                 sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
+                className="justify-start"
               />
             </FadeIn>
           </div>
@@ -177,9 +178,10 @@ function Support() {
           <div className="flex mt-16 lg:mt-0 justify-center lg:w-1/2 lg:justify-end lg:pl-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src={imageWorking}
                 sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
+                className="justify-end"
+                shape={1}
               />
             </FadeIn>
           </div>

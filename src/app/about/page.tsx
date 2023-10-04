@@ -8,8 +8,8 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
+import imageAnnabelCauser from '@/images/team/annabel-causer.jpg'
+import imageAndrewReeve from '@/images/team/andrew-reeve.jpg'
 
 function Values() {
   return (
@@ -44,12 +44,12 @@ const team = [
       {
         name: 'Annabel Causer',
         linkedin: 'https://www.linkedin.com/in/annabelcauser/',
-        image: { src: imageLeslieAlexander },
+        image: { src: imageAnnabelCauser },
       },
       {
         name: 'Andrew Reeve',
         linkedin: 'https://www.linkedin.com/in/andrewlreeve/',
-        image: { src: imageMichaelFoster },
+        image: { src: imageAndrewReeve },
       },
     ],
   },
