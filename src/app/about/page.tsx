@@ -13,7 +13,7 @@ import imageAndrewReeve from '@/images/team/andrew-reeve.jpg'
 
 function Values() {
   return (
-    <div className="mt-24 rounded-4xl bg-raspberry py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 bg-raspberry py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Values"
         title="What We Believe In"

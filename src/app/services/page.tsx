@@ -11,7 +11,6 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
-import imageWebsite from '@/images/website.jpg'
 
 function Section({
   title,
@@ -114,27 +113,6 @@ function Data() {
   )
 }
 
-function Website() {
-  return (
-    <Section title="Website" image={{ src: imageWebsite, shape: 1 }}>
-      <List className="mt-8">
-        <ListItem>
-          Site audits
-        </ListItem>
-        <ListItem>
-          Project management of site relaunches
-        </ListItem>
-        <ListItem>
-          Conversion optimisation 
-        </ListItem>
-        <ListItem>
-          Merchandising 
-        </ListItem>
-      </List>
-    </Section>
-  )
-}
-
 function Process() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
@@ -181,7 +159,6 @@ export default function Services(){
         <Strategy />
         <Marketing />
         <Data />
-        <Website />
       </div>
 
       <Process />

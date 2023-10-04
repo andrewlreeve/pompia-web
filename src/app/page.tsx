@@ -8,33 +8,25 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Quote } from '@/components/Quote'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoBedfolk from '@/images/clients/bedfolk.webp'
+import logoUrbanJungle from '@/images/clients/urban-jungle.svg'
+import logoCraggyRange from '@/images/clients/craggy-range.webp'
+import logoMoju from '@/images/clients/moju.webp'
+import logoHertility from '@/images/clients/hertility.png'
 import imageWorking from '@/images/working.jpg'
-import imageBeers from '@/images/beers.jpg'
+import imageProfile from '@/images/profile.jpg'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Bedfolk', logoBedfolk],
+  ['Urban Jungle', logoUrbanJungle],
+  ['Moju', logoMoju],
+  ['Heritility', logoHertility],
 ]
 
 const testimonials = [
-  {client: 'Bedfolk', name: 'Nick James', role: 'Founder & MD', logo: logoPhobiaDark, title: "Wealth of experience", description: "I couldn't recommend Annabel highly enough. She joined our team as interim Growth Lead and immediately took the bull by the horns. She was brilliant at identifying strategic priorities, structuring them into logical work-streams and managed the team extremely well - allowing them to execute at a high cadence. She brings a wealth of experience from a breadth of categories, and is also just a pleasure to work alongside!"},
-  {client: 'MOJU', name: "Jon Marchant", role: 'Marketing Director', logo: logoPhobiaDark, title: 'Strategic expertise', description: 'Annabel is a real pleasure to work with! She has become an integral part of the MOJU team, putting her wide ranging strategic expertise into practice to drive MOJU DTC growth as well as supporting the internal teams to upskill their e-commerce knowledge. I would strongly recommend Annabel to any business looking to either develop their own DTC platform or accelerate growth.'},
-  {client: 'Urban Jungle', name: 'Jimmy Williams', role: 'CEO', logo: logoPhobiaDark, title: 'Incredible with the team', description: "Annabel joined our team at a critical point in our growth… Executing a huge amount of work, with the highest quality standards… From leading a project around branding and visual identity, through overhauls of performance channels and executing big above the line campaigns. She's also been incredible with the team, taking real time to help them develop. If you get the chance to work with her, I strongly advise you take it."},
+  {client: 'Bedfolk', name: 'Nick James', role: 'Founder & MD', logo: logoBedfolk, title: "Wealth of experience", description: "I couldn't recommend Annabel highly enough. She joined our team as interim Growth Lead and immediately took the bull by the horns. She was brilliant at identifying strategic priorities, structuring them into logical work-streams and managed the team extremely well - allowing them to execute at a high cadence. She brings a wealth of experience from a breadth of categories, and is also just a pleasure to work alongside!"},
+  {client: 'MOJU', name: "Jon Marchant", role: 'Marketing Director', logo: logoBedfolk, title: 'Strategic expertise', description: 'Annabel is a real pleasure to work with! She has become an integral part of the MOJU team, putting her wide ranging strategic expertise into practice to drive MOJU DTC growth as well as supporting the internal teams to upskill their e-commerce knowledge. I would strongly recommend Annabel to any business looking to either develop their own DTC platform or accelerate growth.'},
+  {client: 'Urban Jungle', name: 'Jimmy Williams', role: 'CEO', logo: logoUrbanJungle, title: 'Incredible with the team', description: "Annabel joined our team at a critical point in our growth… Executing a huge amount of work, with the highest quality standards… From leading a project around branding and visual identity, through overhauls of performance channels and executing big above the line campaigns. She's also been incredible with the team, taking real time to help them develop. If you get the chance to work with her, I strongly advise you take it."},
 ]
 
 function Clients() {
@@ -55,7 +47,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} unoptimized width={184}/>
                 </FadeIn>
               </li>
             ))}
@@ -127,7 +119,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageBeers}
+                src={imageProfile}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-start"
               />
@@ -205,7 +197,7 @@ export default async function Home() {
             Unlock growth in your online business
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Pep and Zest is a direct-to-consumer and e-commerce consultancy helping ambitious companies to achieve growth. 
+            Pep and Zest is a direct-to-consumer and marketing consultancy helping ambitious companies to achieve growth. 
           </p>
         </FadeIn>
       </Container>
@@ -218,15 +210,13 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
-        Our approach is to be an extension of your team and we’ll work with you to to drive sustainable 
+        Our approach is to be an extension of your team. We’ll work with you to to drive sustainable 
         long-term growth through marketing, website and data alignment. 
       </Quote>
 
       <Support />
 
       <Testimonials />
-
-
 
       <ContactSection />
     </>
