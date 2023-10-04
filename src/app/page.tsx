@@ -197,7 +197,7 @@ export default async function Home() {
             Unlock growth in your online business
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Pep and Zest is a direct-to-consumer and marketing consultancy helping ambitious companies to achieve growth. 
+            Pep & Zest is a direct-to-consumer and marketing consultancy helping ambitious companies to achieve growth. 
           </p>
         </FadeIn>
       </Container>

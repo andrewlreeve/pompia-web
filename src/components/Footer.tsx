@@ -40,7 +40,7 @@ export function Footer() {
           </Link>
           <Navigation />
           <p className="text-sm text-neutral-700">
-            © Pep and Zest Limited {new Date().getFullYear()}
+            © Pep & Zest Limited {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
