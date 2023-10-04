@@ -125,6 +125,16 @@ function NavigationItem({
   )
 }
 
+function Navigation() {
+  return (
+    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+      <NavigationRow>
+        <NavigationItem href="/services">Services</NavigationItem>
+        <NavigationItem href="/about">About Us</NavigationItem>
+      </NavigationRow>
+    </nav>
+  )
+}
 
 function RootLayoutInner({ children }: { children: React.ReactNode }) {
   let panelId = useId()
@@ -199,6 +209,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 }}
               />
             </div>
+<Navigation />
           </motion.div>
         </motion.div>
       </header>
