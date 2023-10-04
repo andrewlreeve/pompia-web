@@ -6,8 +6,8 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Pep and Zest',
-    default: 'Pep and Zest - Direct-to-consumer and e-commerce consultancy helping companies to achieve online growth'
+    template: '%s - Pep & Zest',
+    default: 'Pep & Zest - Direct-to-consumer and e-commerce consultancy'
   },
 }
 

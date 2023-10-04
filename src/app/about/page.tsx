@@ -115,12 +115,12 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About" title="Who we are">
         <p>
-          Pep Zest is a boutique online and e-commerce growth consultancy founded by Annabel Causer and Andrew Reeve,
+          Pep & Zest is a boutique online and e-commerce growth consultancy founded by Annabel Causer and Andrew Reeve,
           each with over 15 years experience across growth, marketing, technology, ecommerce and data.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            “Pep and Zest is built to provide the support we wanted when we were running our own direct-to-consumer
+            “Pep & Zest is built to provide the support we wanted when we were running our own direct-to-consumer
             business. Our approach is to be an extension of your team, to understand your business levers and the 
             actions required to drive sustainable long-term growth. We’ll help to dial up your growth, embed the skills you need to maintain momentum, and then get out your way”.
           </p>
@@ -128,7 +128,7 @@ export default async function About() {
             Annabel and Andrew mentor and advise startups across NZ, AU and UK and are driven to help companies to discover what will move their online businesses forward.
           </p>
           <p>
-            Prior to founding Pep and Zest, Annabel and Andrew founded a VC-backed online craft beer retailer in the UK. 
+            Prior to founding Pep & Zest, Annabel and Andrew founded a VC-backed online craft beer retailer in the UK. 
             Highlights include driving 3 x yearly customer and revenue growth; VC, crowd and angel investment; 31% awareness
             among craft beer drinkers; and multiple start up awards including #49 StartUp100 Awards, Future 50 Disruptive Businesses,
             Retail Business of the Year Finalist and The Guardian Startup of the Year Finalist.
