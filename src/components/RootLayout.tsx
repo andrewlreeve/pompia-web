@@ -209,7 +209,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 }}
               />
             </div>
-            <Navigation />
+<Navigation />
           </motion.div>
         </motion.div>
       </header>
