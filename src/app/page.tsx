@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -8,7 +7,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
+import { Quote } from '@/components/Quote'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
@@ -120,6 +119,7 @@ function Services() {
         title="What We Do"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
+        Founded with an entrepreneurial approach, we provide the support, strategy, and tools you need to disrupt industries and scale your digital business.
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -203,8 +203,7 @@ export default async function Home() {
             Unlock growth in your online business
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Pep and Zest is a direct-to-consumer and e-commerce consultancy helping companies to achieve online growth.
-            With an entrepreneurial approach, we provide the support, strategy, and tools you need to disrupt industries and scale your digital business.
+            Pep and Zest is a direct-to-consumer and e-commerce consultancy helping ambitious companies to achieve growth. 
           </p>
         </FadeIn>
       </Container>
@@ -213,13 +212,13 @@ export default async function Home() {
 
       <Services />
 
-      <Testimonial
+      <Quote
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
-        Pep and Zest is built to provide the support we wanted when we were running our own direct-to-consumer business.
-        Our approach is to be an extension of your team, understand your business levers and the actions required to drive sustainable long-term growth.
-      </Testimonial>
+        Our approach is to be an extension of your team and we’ll work with you to to drive sustainable 
+        long-term growth through marketing, website and data alignment. 
+      </Quote>
 
       <Support />
 
