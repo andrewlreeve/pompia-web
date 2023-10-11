@@ -9,7 +9,7 @@ export function Quote({
   className,
 }: {
   children: React.ReactNode
-  person: { name: string, company: string }
+  person: { name: string; company: string }
   className?: string
 }) {
   return (
@@ -36,4 +36,3 @@ export function Quote({
     </div>
   )
 }
-

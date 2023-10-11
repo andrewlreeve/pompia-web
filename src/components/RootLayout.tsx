@@ -1,12 +1,6 @@
 'use client'
 
-import {
-  createContext,
-  useEffect,
-  useId,
-  useRef,
-  useState,
-} from 'react'
+import { createContext, useEffect, useId, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
@@ -54,17 +48,11 @@ function Header({
   toggleRef: React.RefObject<HTMLButtonElement>
   invert?: boolean
 }) {
-
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-        >
-          <Logo
-            className="h-8 sm:block"
-          />
+        <Link href="/" aria-label="Home">
+          <Logo className="h-8 sm:block" />
         </Link>
         <div className="flex items-center gap-x-4 md:gap-x-8">
           <Button href="/contact" invert={invert}>
@@ -209,7 +197,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 }}
               />
             </div>
-<Navigation />
+            <Navigation />
           </motion.div>
         </motion.div>
       </header>
@@ -223,7 +211,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
-
           <main className="w-full flex-auto">{children}</main>
 
           <Footer />

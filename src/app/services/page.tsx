@@ -54,18 +54,10 @@ function Strategy() {
   return (
     <Section title="Strategy" image={{ src: imageWhiteboard }}>
       <List className="mt-8">
-        <ListItem>
-          Direct-to-consumer and ecommerce strategy
-        </ListItem>
-        <ListItem>
-          Experiment-driven growth frameworks  
-        </ListItem>
-        <ListItem>
-          KPIs and target metrics 
-        </ListItem>
-        <ListItem>
-          Team hiring or upskilling 
-        </ListItem>
+        <ListItem>Direct-to-consumer and ecommerce strategy</ListItem>
+        <ListItem>Experiment-driven growth frameworks</ListItem>
+        <ListItem>KPIs and target metrics</ListItem>
+        <ListItem>Team hiring or upskilling</ListItem>
       </List>
     </Section>
   )
@@ -75,18 +67,13 @@ function Marketing() {
   return (
     <Section title="Marketing" image={{ src: imageMeeting, shape: 1 }}>
       <List className="mt-8">
+        <ListItem>Marketing strategy and implementation</ListItem>
+        <ListItem>Agency, freelance or team management</ListItem>
         <ListItem>
-          Marketing strategy and implementation
+          Performance marketing including Google Search & Performance Max, Meta
+          Ads, Pinterest Ads, YouTube Ads
         </ListItem>
-        <ListItem>
-          Agency, freelance or team management
-        </ListItem>
-        <ListItem>
-          Performance marketing including Google Search & Performance Max, Meta Ads, Pinterest Ads, YouTube Ads
-        </ListItem>
-        <ListItem>
-          Organic email and email automation
-        </ListItem>
+        <ListItem>Organic email and email automation</ListItem>
       </List>
     </Section>
   )
@@ -97,17 +84,15 @@ function Data() {
     <Section title="Data" image={{ src: imageLaptop, shape: 2 }}>
       <List className="mt-8">
         <ListItem>
-          Set up the right foundations to build your data capabilities 
+          Set up the right foundations to build your data capabilities
         </ListItem>
         <ListItem>
-          Build a modern data stack to give a single source of truth 
+          Build a modern data stack to give a single source of truth
         </ListItem>
         <ListItem>
-          Actionable insight and reporting on the metrics that really matter 
+          Actionable insight and reporting on the metrics that really matter
         </ListItem>
-        <ListItem>
-          First-party data for better marketing attribution
-        </ListItem>
+        <ListItem>First-party data for better marketing attribution</ListItem>
       </List>
     </Section>
   )
@@ -116,25 +101,21 @@ function Data() {
 function Process() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
-      </div>
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50"></div>
 
-      <SectionIntro
-        eyebrow="Process"
-        title="How We Work"
-      >
-        <p>
-          Two ways to work with us
-        </p>
+      <SectionIntro eyebrow="Process" title="How We Work">
+        <p>Two ways to work with us</p>
       </SectionIntro>
 
       <Container className="mt-8">
         <GridList>
           <GridListItem title="Interim or Fractional Role">
-            Fill leadership gaps with experienced roles like Marketing Director or Growth Lead.
+            Fill leadership gaps with experienced roles like Marketing Director
+            or Growth Lead.
           </GridListItem>
           <GridListItem title="Consulting Services">
-            Specialised expertise and in-house team coaching for specific projects.
+            Specialised expertise and in-house team coaching for specific
+            projects.
           </GridListItem>
         </GridList>
       </Container>
@@ -144,15 +125,17 @@ function Process() {
 
 export const metadata: Metadata = {
   title: 'Services',
-  description:
-    'We provide Interim, Fractional Support or Consulting Services',
+  description: 'We provide Interim, Fractional Support or Consulting Services',
 }
 
-export default function Services(){
+export default function Services() {
   return (
     <>
       <PageIntro eyebrow="Services" title="What We Do">
-        Pep & Zest is an online and e-commerce growth consultancy helping companies to grow their online businesses. Whether its interim support or project-specific consultation, we offer personalised support tailored to your needs.
+        Pep & Zest is an online and e-commerce growth consultancy helping
+        companies to grow their online businesses. Whether its interim support
+        or project-specific consultation, we offer personalised support tailored
+        to your needs.
       </PageIntro>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
