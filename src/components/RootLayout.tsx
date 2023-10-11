@@ -211,7 +211,16 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
-          <main className="w-full flex-auto">{children}</main>
+          <main className="w-full flex-auto">
+            <div className="max-w-8xl absolute -z-10">
+              <img
+                src="images/ui/pz_background_top.png"
+                alt="top-bg"
+                className="-mt-92px ml-509px max-w-none"
+              />
+            </div>
+            {children}
+          </main>
 
           <Footer />
         </motion.div>

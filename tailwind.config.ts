@@ -18,6 +18,15 @@ export default {
       '7xl': ['4rem', { lineHeight: '4.5rem' }],
     },
     extend: {
+      margin: {
+        '509px': '31.8125rem',
+        '-92px': '-5.75rem',
+        '-126px': '-7.875rem',
+        '-296px': '-18.5rem',
+      },
+      maxWidth: {
+        '8xl': '120rem',
+      },
       colors: {
         richBlack: '#020a0a',
         plum: '#910f1a',

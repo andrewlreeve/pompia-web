@@ -55,7 +55,7 @@ const testimonials = [
 
 function Clients() {
   return (
-    <div className="mt-24 bg-raspberry py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 bg-raspberry py-20 sm:mt-32 sm:py-32 lg:mt-52">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -227,18 +227,29 @@ export default async function Home() {
       </Container>
 
       <Clients />
-
+      <div className="absolute -z-10">
+        <img
+          src="images/ui/pz_background_middle.png"
+          alt=""
+          className="-ml-126px mt-0 max-w-none"
+        />
+      </div>
       <Services />
-
       <Quote
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className="mt-24 sm:mt-32 lg:mt-20"
         person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
         Our approach is to be an extension of your team. We’ll work with you to
         to drive sustainable long-term growth through marketing, website and
         data alignment.
       </Quote>
-
+      <div className="absolute -z-10">
+        <img
+          src="images/ui/pz_background_bottom.png"
+          alt=""
+          className="-ml-296px max-w-none"
+        />
+      </div>
       <Support />
 
       <Testimonials />
