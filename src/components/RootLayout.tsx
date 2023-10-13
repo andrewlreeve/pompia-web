@@ -212,12 +212,14 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <main className="w-full flex-auto">
-            <div className="max-w-8xl absolute -z-10">
-              <img
-                src="images/ui/pz_background_top.png"
-                alt="top-bg"
-                className="-mt-92px ml-509px max-w-none"
-              />
+            <div className="w-8xl absolute -z-10">
+              <div className="align-center left-bg-center-fix relative flex justify-end">
+                <img
+                  src="images/ui/pz_background_top.png"
+                  alt="top-bg"
+                  className="-mt-92px max-w-none"
+                />
+              </div>
             </div>
             {children}
           </main>

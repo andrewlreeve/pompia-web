@@ -227,28 +227,32 @@ export default async function Home() {
       </Container>
 
       <Clients />
-      <div className="absolute -z-10">
-        <img
-          src="images/ui/pz_background_middle.png"
-          alt=""
-          className="-ml-126px mt-0 max-w-none"
-        />
+      <div className="w-8xl absolute -z-10">
+        <div className="align-center left-bg-center-fix relative flex justify-end">
+          <img
+            src="images/ui/pz_background_middle.png"
+            alt="top-bg"
+            className="-mt-92px mt-0 max-w-none"
+          />
+        </div>
       </div>
       <Services />
       <Quote
-        className="mt-24 sm:mt-32 lg:mt-20"
+        className="lg:mt-18 mt-24 sm:mt-32"
         person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
         Our approach is to be an extension of your team. We’ll work with you to
         to drive sustainable long-term growth through marketing, website and
         data alignment.
       </Quote>
-      <div className="absolute -z-10">
-        <img
-          src="images/ui/pz_background_bottom.png"
-          alt=""
-          className="-ml-296px max-w-none"
-        />
+      <div className="w-8xl absolute -z-10">
+        <div className="align-center left-bg-center-fix relative flex justify-end">
+          <img
+            src="images/ui/pz_background_bottom.png"
+            alt="top-bg"
+            className="-mt-92px max-w-none"
+          />
+        </div>
       </div>
       <Support />
 

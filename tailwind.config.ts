@@ -21,11 +21,12 @@ export default {
       margin: {
         '509px': '31.8125rem',
         '-92px': '-5.75rem',
-        '-126px': '-7.875rem',
-        '-296px': '-18.5rem',
       },
-      maxWidth: {
+      width: {
         '8xl': '120rem',
+      },
+      inset: {
+        'bg-center-fix': 'calc((100vw - 1920px)/2)',
       },
       colors: {
         richBlack: '#020a0a',
