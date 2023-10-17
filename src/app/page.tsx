@@ -15,6 +15,7 @@ import logoMoju from '@/images/clients/moju.webp'
 import logoHertility from '@/images/clients/hertility.png'
 import imageWorking from '@/images/working.jpg'
 import imageProfile from '@/images/profile.jpg'
+import { BgDecorator } from '@/components/BgDecorator'
 
 const clients = [
   ['Bedfolk', logoBedfolk],
@@ -227,15 +228,7 @@ export default async function Home() {
       </Container>
 
       <Clients />
-      <div className="min-w-8xl absolute -z-10 w-full">
-        <div className="align-center desktopxl:justify-start desktopxl:left-0 relative left-bg-center-fix flex justify-end ">
-          <img
-            src="images/ui/pz_background_middle.png"
-            alt="top-bg"
-            className="-mt-92px mt-0 max-w-none"
-          />
-        </div>
-      </div>
+      <BgDecorator type="middle" />
       <Services />
       <Quote
         className="lg:mt-18 mt-24 sm:mt-72px"
@@ -245,15 +238,7 @@ export default async function Home() {
         to drive sustainable long-term growth through marketing, website and
         data alignment.
       </Quote>
-      <div className="min-w-8xl absolute -z-10 w-full">
-        <div className="align-center relative left-bg-center-fix flex justify-end">
-          <img
-            src="images/ui/pz_background_bottom.png"
-            alt="top-bg"
-            className="-mt-92px max-w-none"
-          />
-        </div>
-      </div>
+      <BgDecorator type="bottom" />
       <Support />
 
       <Testimonials />

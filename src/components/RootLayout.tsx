@@ -10,6 +10,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { Logo } from '@/components/Logo'
+import { BgDecorator } from './BgDecorator'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -212,15 +213,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <main className="w-full flex-auto">
-            <div className="min-w-8xl absolute -z-10 w-full">
-              <div className="align-center relative left-bg-center-fix flex justify-end">
-                <img
-                  src="images/ui/pz_background_top.png"
-                  alt="top-bg"
-                  className="-mt-92px max-w-none"
-                />
-              </div>
-            </div>
+            <BgDecorator type="top" />
             {children}
           </main>
 
