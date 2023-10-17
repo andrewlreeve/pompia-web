@@ -11,7 +11,7 @@ export function PageIntro({
 }: {
   eyebrow: string
   title: string
-  children: React.ReactNode
+  children?: React.ReactNode
   centered?: boolean
 }) {
   return (

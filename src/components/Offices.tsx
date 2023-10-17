@@ -6,7 +6,7 @@ function Office({
   invert = false,
 }: {
   name: string
-  children: React.ReactNode
+  children?: React.ReactNode
   invert?: boolean
 }) {
   return (
@@ -32,10 +32,10 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="New Zealand" invert={invert}></Office>
+        <Office name="New Zealand" invert={invert} />
       </li>
       <li>
-        <Office name="Australia" invert={invert}></Office>
+        <Office name="Australia" invert={invert} />
       </li>
     </ul>
   )
