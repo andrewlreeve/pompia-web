@@ -23,7 +23,7 @@ export default {
         '72px': '4.5rem',
         '-92px': '-5.75rem',
       },
-      width: {
+      minWidth: {
         '8xl': '120rem',
       },
       inset: {
@@ -50,6 +50,9 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
         body: ['Roboto', ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        desktopxl: '120rem',
       },
     },
   },

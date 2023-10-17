@@ -227,8 +227,8 @@ export default async function Home() {
       </Container>
 
       <Clients />
-      <div className="w-8xl absolute -z-10">
-        <div className="align-center left-bg-center-fix relative flex justify-end">
+      <div className="min-w-8xl absolute -z-10 w-full">
+        <div className="align-center desktopxl:justify-start desktopxl:left-0 relative left-bg-center-fix flex justify-end ">
           <img
             src="images/ui/pz_background_middle.png"
             alt="top-bg"
@@ -238,15 +238,15 @@ export default async function Home() {
       </div>
       <Services />
       <Quote
-        className="lg:mt-18 sm:mt-72px mt-24"
+        className="lg:mt-18 mt-24 sm:mt-72px"
         person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
         Our approach is to be an extension of your team. We’ll work with you to
         to drive sustainable long-term growth through marketing, website and
         data alignment.
       </Quote>
-      <div className="w-8xl absolute -z-10">
-        <div className="align-center left-bg-center-fix relative flex justify-end">
+      <div className="min-w-8xl absolute -z-10 w-full">
+        <div className="align-center relative left-bg-center-fix flex justify-end">
           <img
             src="images/ui/pz_background_bottom.png"
             alt="top-bg"
