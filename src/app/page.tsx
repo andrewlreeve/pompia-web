@@ -238,7 +238,7 @@ export default async function Home() {
       </div>
       <Services />
       <Quote
-        className="lg:mt-18 mt-24 sm:mt-32"
+        className="lg:mt-18 sm:mt-72px mt-24"
         person={{ name: 'Annabel Causer', company: 'Pep & Zest' }}
       >
         Our approach is to be an extension of your team. We’ll work with you to

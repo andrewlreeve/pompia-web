@@ -20,6 +20,7 @@ export default {
     extend: {
       margin: {
         '509px': '31.8125rem',
+        '72px': '4.5rem',
         '-92px': '-5.75rem',
       },
       width: {
