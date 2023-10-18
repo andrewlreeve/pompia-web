@@ -16,9 +16,13 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
     bottom: { src: 'images/ui/pz_background_bottom.png' },
   }
 
-  const { src, class: additionalClass, wrapperClass } = srcObject[type]
+  const {
+    src,
+    class: additionalClass = '',
+    wrapperClass = '',
+  } = srcObject[type]
   return (
-    <div className="min-w-8xl absolute -z-10 w-full" {...restProps}>
+    <div className="absolute -z-10 w-full min-w-8xl" {...restProps}>
       <div
         className={`align-center relative left-bg-center-fix flex justify-end ${wrapperClass}`}
       >
