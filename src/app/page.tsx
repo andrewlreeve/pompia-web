@@ -56,7 +56,7 @@ const testimonials = [
 
 function Clients() {
   return (
-    <div className="mt-24 bg-raspberry py-20 sm:mt-32 sm:py-32 lg:mt-52">
+    <div className="-mb-1px mt-24 bg-raspberry py-20 sm:mt-32 sm:py-32 lg:mt-52">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">

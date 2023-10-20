@@ -21,6 +21,7 @@ export default {
       margin: {
         '509px': '31.8125rem',
         '72px': '4.5rem',
+        '-1px': '-0.0625rem',
         '-92px': '-5.75rem',
       },
       minWidth: {
