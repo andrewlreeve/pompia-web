@@ -24,7 +24,7 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
       src: '/images/ui/pz_background_middle.png',
       width: 1920,
       height: 1165,
-      class: 'mt-0',
+      class: 'mt-0 hidden sm:block',
       wrapperClass: 'desktopxl:justify-start desktopxl:left-0',
       sizes: '(min-width: 1024px) 41rem, 31rem',
     },
