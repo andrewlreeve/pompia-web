@@ -16,12 +16,12 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
     }
   > = {
     top: {
-      src: '/images/ui/pz_background_top.png',
+      src: '/images/ui/pz_background_top.svg',
       width: 1504,
       height: 856,
     },
     middle: {
-      src: '/images/ui/pz_background_middle.png',
+      src: '/images/ui/pz_background_middle.svg',
       width: 1920,
       height: 1165,
       class: 'mt-0 hidden sm:block',
@@ -29,7 +29,7 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
       sizes: '(min-width: 1024px) 41rem, 31rem',
     },
     bottom: {
-      src: '/images/ui/pz_background_bottom.png',
+      src: '/images/ui/pz_background_bottom.svg',
       width: 1916,
       height: 939,
     },
