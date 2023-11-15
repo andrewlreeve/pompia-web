@@ -213,7 +213,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <main className="w-full flex-auto">
-            <BgDecorator type="top" />
             {children}
           </main>
 

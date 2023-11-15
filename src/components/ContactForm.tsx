@@ -62,7 +62,7 @@ export function ContactForm() {
           <TextInput label="Message" name="message" />
         </div>
         <Button type="submit" disabled={state.submitting} className="mt-10">
-          Let’s work together
+          Submit
         </Button>
         <ValidationError errors={state.errors} className="mt-6 text-red-700" />
       </form>

@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import backgroundTop from '@/images/backgrounds/background-top.svg'
+import backgroundMiddle from '@/images/backgrounds/background-middle.svg'
+import backgroundBottom from '@/images/backgrounds/background-bottom.svg'
 type BgDecoratorProps = React.HTMLAttributes<HTMLElement> & {
   type: 'top' | 'middle' | 'bottom'
 }
@@ -16,12 +19,12 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
     }
   > = {
     top: {
-      src: '/images/ui/pz_background_top.svg',
+      src: backgroundTop,
       width: 1504,
       height: 856,
     },
     middle: {
-      src: '/images/ui/pz_background_middle.svg',
+      src: backgroundMiddle,
       width: 1920,
       height: 1165,
       class: 'mt-0 hidden sm:block',
@@ -29,7 +32,7 @@ const BgDecorator: React.FC<BgDecoratorProps> = ({ type, ...restProps }) => {
       sizes: '(min-width: 1024px) 41rem, 31rem',
     },
     bottom: {
-      src: '/images/ui/pz_background_bottom.svg',
+      src: backgroundBottom,
       width: 1916,
       height: 939,
     },
