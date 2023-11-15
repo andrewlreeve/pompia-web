@@ -13,7 +13,8 @@ const shapes = [
     height: 680,
     path: 'M 580 14 V 683 H 141 C 104 653 -15 286 283 14 H 580',
   },
-  { width: 655,
+  {
+    width: 655,
     height: 680,
     path: 'M 69 2 H 530 C 696 289 589 612 495 734 H 69 V 1',
   },

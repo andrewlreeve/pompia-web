@@ -18,16 +18,28 @@ export default {
       '7xl': ['4rem', { lineHeight: '4.5rem' }],
     },
     extend: {
+      margin: {
+        '509px': '31.8125rem',
+        '72px': '4.5rem',
+        '-1px': '-0.0625rem',
+        '-92px': '-5.75rem',
+      },
+      minWidth: {
+        '8xl': '120rem',
+      },
+      inset: {
+        'bg-center-fix': 'calc((100vw - 1920px)/2)',
+      },
       colors: {
-        'richBlack': '#020a0a',
-        'plum': '#910f1a',
-        'cayenne': '#dd1507',
-        'raspberry': '#df1440',
-        'citrus': '#f58713',
-        'tumeric': '#f6bb22',
-        'aubergine': '#700022',
-        'limeZest': '#b6cb43',
-        'sugar': '#fff7e8',
+        richBlack: '#020a0a',
+        plum: '#910f1a',
+        cayenne: '#dd1507',
+        raspberry: '#df1440',
+        citrus: '#f58713',
+        tumeric: '#f6bb22',
+        aubergine: '#700022',
+        limeZest: '#b6cb43',
+        sugar: '#fff7e8',
       },
       borderRadius: {
         '4xl': '2.5rem',
@@ -39,6 +51,9 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
         body: ['Roboto', ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        desktopxl: '120rem',
       },
     },
   },

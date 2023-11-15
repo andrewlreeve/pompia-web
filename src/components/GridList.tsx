@@ -56,9 +56,7 @@ export function GridListItem({
           >
             {title}
           </strong>{' '}
-          <p>
-          {children}
-          </p>
+          <p>{children}</p>
         </Border>
       </FadeIn>
     </li>

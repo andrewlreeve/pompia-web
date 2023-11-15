@@ -10,9 +10,7 @@ function ContactDetails() {
   return (
     <FadeIn>
       <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-        {[
-          ['Say hello', 'hello@pepandzest.com']
-        ].map(([label, email]) => (
+        {[['Say hello', 'hello@pepandzest.com']].map(([label, email]) => (
           <div key={email}>
             <dt className="font-semibold text-neutral-950">{label}</dt>
             <dd>
@@ -38,11 +36,10 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-      </PageIntro>
+      <PageIntro eyebrow="Contact us" title="Let’s work together"></PageIntro>
 
       <Container className="mt-8">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 max-w-2xl">
+        <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16">
           <ContactDetails />
           <ContactForm />
         </div>
