@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together"></PageIntro>
+      <PageIntro eyebrow="Contact us" title="Introduce your business"></PageIntro>
 
       <Container className="mt-8">
         <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16">
