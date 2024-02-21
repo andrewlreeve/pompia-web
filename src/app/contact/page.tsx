@@ -10,7 +10,7 @@ function ContactDetails() {
   return (
     <FadeIn>
       <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-        {[['Say hello', 'hello@pepandzest.com']].map(([label, email]) => (
+        {[['Say hello', 'hello@pompia.ai']].map(([label, email]) => (
           <div key={email}>
             <dt className="font-semibold text-neutral-950">{label}</dt>
             <dd>
